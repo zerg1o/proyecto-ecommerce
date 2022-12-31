@@ -7,15 +7,15 @@
                 <h1><strong>Pedido #{{ $order->id }}</strong> </h1>
                 <h2><strong>Detalle de pedido</strong> </h2>
             </div>
-            
+
             <div class="product-container col-md-12">
-                
+
                 {{-- crear productos --}}
                 @if ($order != null)
                     <div class="col d-flex justify-content-center">
-                        
+
                         <div class="product-management col-md-7">
-                            
+
 
                             <hr>
                             <table class="table table-striped">
@@ -87,12 +87,21 @@
 
                     <hr>
 
+<<<<<<< HEAD
                     
 
 
 
                     
                
+=======
+
+
+
+
+
+
+>>>>>>> 69825ba9b0b64fcac9850d8d23788fb81d39ae20
 
             </div>
             <div class="col-md-12">
