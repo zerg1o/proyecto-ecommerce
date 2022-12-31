@@ -79,8 +79,8 @@
             </div>
         </div>
     </div>
-<<<<<<< HEAD
+<<<<<<<<< Temporary merge branch 1
 @endsection
-=======
+=========
 @endsection
->>>>>>> 69825ba9b0b64fcac9850d8d23788fb81d39ae20
+>>>>>>>>> Temporary merge branch 2

@@ -15,7 +15,8 @@
                     <div class="col d-flex justify-content-center">
 
                         <div class="product-management col-md-7">
-
+                            
+>>>>>>>>> Temporary merge branch 2
 
                             <hr>
                             <table class="table table-striped">
@@ -87,21 +88,21 @@
 
                     <hr>
 
-<<<<<<< HEAD
+<<<<<<<<< Temporary merge branch 1
+
+
+
+
+
+
+=========
                     
 
 
 
                     
                
-=======
-
-
-
-
-
-
->>>>>>> 69825ba9b0b64fcac9850d8d23788fb81d39ae20
+>>>>>>>>> Temporary merge branch 2
 
             </div>
             <div class="col-md-12">
