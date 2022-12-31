@@ -18,4 +18,3 @@ class Order_product extends Model
     }
 
 }
-
