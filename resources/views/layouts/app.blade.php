@@ -76,7 +76,7 @@
                                         <a class="dropdown-item" href="{{ route('category.index') }}">
                                             Gestionar Categorias
                                         </a>
-                                        <a class="dropdown-item" href="{{ route('/') }}">
+                                        <a class="dropdown-item" href="{{ route('order.management') }}">
                                             Gestionar Pedidos
                                         </a>
                                     @endif

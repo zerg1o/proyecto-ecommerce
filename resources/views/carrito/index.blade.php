@@ -26,6 +26,8 @@
                                     </tr>
                                 </thead>
                                 <tbody>
+                                    <?php $total = 0; ?>
+
                                     @foreach (session('cart') as $item)
                                         <tr>
 
@@ -37,6 +39,7 @@
                                                 <a class="btn btn-sm btn-primary" href="{{route('cart.up',['producto_id'=>$item['id']])}}"><strong>+</strong></a>
                                             </td>
                                             <td>{{ $item['price'] * $item['quantity'] }}</td>
+                                            <?php $total +=  $item['price'] * $item['quantity']; ?>
                                             <td>
                                                 <a class="btn btn-warning" href="{{ route('cart.remove',['producto_id'=>$item['id']]) }}">Quitar</a>
                                             </td>
@@ -46,7 +49,13 @@
 
                                 </tbody>
                             </table>
+
+                            <h1>Total a pagar: S/{{ $total }}</h1>
+
+
                             <a class="btn btn-danger" href="{{route('cart.clear')}}">Vaciar Carrito</a>
+
+                            <a class="btn btn-danger" href="{{route('order.index')}}">Continuar con pedido</a>
                         @else
                             <h2>Carrito Vacío</h2>
                             <a class="btn btn-success" href="{{route('/')}}"><strong>Seguir buscando productos</strong></a>

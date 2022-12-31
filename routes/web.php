@@ -44,3 +44,14 @@ Route::get('/category/delete/{category_id}', 'CategoryController@delete')->name(
 Route::post('/category/save', 'CategoryController@save')->name('category.save');
 Route::get('/category/edit/{category_id}', 'CategoryController@edit')->name('category.edit');
 Route::post('/category/update', 'CategoryController@update')->name('category.update');
+
+//order 
+
+Route::get('/order/index', 'OrderController@index')->name('order.index');
+Route::post('/order/save', 'OrderController@save')->name('order.save');
+Route::get('/order/management', 'OrderController@management')->name('order.management');
+Route::get('/order/detail/{id}', 'OrderController@detail')->name('order.detail');
+Route::post('/order/update', 'OrderController@update')->name('order.update');
+//payment
+Route::get('/payment/pay','PaymentController@payWithPaypal')->name('payment.paypal');
+Route::get('/pay/status','PaymentController@status')->name('payment.status');

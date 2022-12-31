@@ -7,6 +7,7 @@ use App\Product;
 use App\Provider;
 use App\Shipping;
 use App\User;
+use App\Order_product;
 
 class Factory 
 {
@@ -17,6 +18,9 @@ class Factory
         }
         elseif('order'==$modelo){
             return new Order();
+        }
+        elseif('order_product'==$modelo){
+            return new Order_product();
         }
         elseif('product'==$modelo){
             return new Product();

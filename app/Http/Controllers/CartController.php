@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Factory;
-use App\Product;
+//use App\Product;
 
 class CartController extends Controller
 {
@@ -12,6 +12,17 @@ class CartController extends Controller
 
     public function index(){
         return view('carrito.index');
+    }
+
+    public static function getTotal(){
+        $cart = session()->get('cart');
+        $total = 0;
+        foreach($cart as $key => $item){
+            
+            $total+= $item['quantity']*$item['price'];
+
+        }
+        return $total;
     }
 
     public function add($product_id){
