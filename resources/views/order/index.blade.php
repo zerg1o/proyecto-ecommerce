@@ -156,12 +156,12 @@
 
                                 <div class="col-md-2">
                                     <a href="{{route('payment.paypal')}}">PayPal</a>
-                                    
+
                                 </div>
                                 <div class="col-md-2 col-form-label text-md-center">
                                     <input type="radio" name="tipo_pago" value="transaccion" required>
                                     <label for="tipo_pago" class="">Transaccion bancaria</label>
-                                    
+
                                 </div>
                             </div>
 

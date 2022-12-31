@@ -16,4 +16,6 @@ class Order_product extends Model
         return $this->where('order_id',$order_id)
                     ->orderBy('id','desc')->get();
     }
+
 }
+

@@ -28,7 +28,6 @@ class PaymentController extends Controller
     );
     }
 
-    
 
     public function payWithPaypal(){
         // After Step 2
@@ -56,7 +55,7 @@ class PaymentController extends Controller
             ->setPayer($payer)
             ->setTransactions(array($transaction))
             ->setRedirectUrls($redirectUrls);
-           
+
             // After Step 3
             try {
                 $payment->create($this->apiContext);
@@ -73,7 +72,7 @@ class PaymentController extends Controller
 
 
     }
-    
+
     public function status(Request $request){
         return View('payment.status');
         // dd($request->all());
