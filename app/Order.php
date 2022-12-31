@@ -9,7 +9,7 @@ class Order extends Model
     //muchos a uno
 
     public function user(){
-        return $this->belongsTo('App\User','user_id');
+        return $this->belongsTo('App\User','user_id'); 
     }
 
     public function shipping(){
